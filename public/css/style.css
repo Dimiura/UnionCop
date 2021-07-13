@@ -92,33 +92,87 @@
     animation:move-background 150s linear infinite;
   }
   
-  #topbar{
-    position: absolute;
-    display: inline-flex;
-      background-color: transparent;
-      z-index: 2;
-      width: 100%;
-      height:50%;
-      right:0%;
-      margin:0;
-    
+  
+ul
+{
+  width: 20px;
+  height: 10px;
+  list-style: none;
+  float: right;
+  margin: 80px 100px 0px 0px;
+  text-align: center;
+  
 }
 
 
-.nav-link{
-    color: whitesmoke;
-}
-
-body, html {
+body, html 
+{
     height: 100%;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+.row{
+  margin:0;
+}
+
+.container{
+  padding: 70px 0;
+}
+
+p,li
+{
+color: whitesmoke;
+font-size: 22px;
+}
+
+.navbar-brand
+{ 
+  font-size: 30px;
+  padding:0;
+  color:#Fff
+}
+
+#navbar-links a
+{
+  margin-right: 10px;
+  font-size: 28px;
+  color: #Fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+  padding: 1rem .8rem;
+}
+
+.navbar-brand:hover{
+  color:#Fff
+}
+
+header, .navbar
+{
+  z-index: 3;
+background-color: #0c0c0c;
+}
+
+#nav-container{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo
+{
+margin-left: 10px;
+width: 120px; 
+}
+
+body 
+{
   background-color: #242F3F;
 }
 
-.loader-wrapper{
+.loader-wrapper
+{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -131,7 +185,8 @@ body {
    
 }
 
-.loader {
+.loader 
+{
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -141,7 +196,8 @@ body {
   animation: loader 2s infinite ease;
 }
 
-.loader-inner {
+.loader-inner 
+{
   vertical-align: top;
   display: inline-block;
   width: 100%;
@@ -192,7 +248,3 @@ body {
     height: 0%;
   }
 }
-
-
-  
-  
