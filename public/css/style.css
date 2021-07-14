@@ -3,10 +3,10 @@ body, html {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(-45deg, #b1a99b, #000000, #000000, #a0a0a0);
-	background-size: 400% 400%;
+	background-size: 1000% 1000%;
 	animation: gradient 15s ease infinite;
-  position: fixed;
-  height: 100%;
+  position: relative;
+  
 }
 
 
@@ -43,7 +43,7 @@ p, li {
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: black;
@@ -117,6 +117,178 @@ p, li {
 		background-position: 0% 50%;
 	}
 }
+
+/* features */
+
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ffd106;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+.icon-box-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.features .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: transparent;
+}
+
+.features .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.features .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.features .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.features .icon-box h4 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.features .icon-box h4 a {
+  color: #2c4964;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.features .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.features .iconbox-red i {
+  color: #de3737;
+}
+
+.features .iconbox-red:hover .icon i {
+  color: #fff;
+}
+
+.features .iconbox-red:hover .icon path {
+  fill: #de3737;
+}
+
+.features .iconbox-lightred i {
+  color: #FF5959;
+}
+
+.features .iconbox-lightred:hover .icon i {
+  color: #fff;
+}
+
+.features .iconbox-lightred:hover .icon path {
+  fill: #FF5959;
+}
+
+.features .iconbox-darkred i {
+  color: #941616;
+}
+
+.features .iconbox-darkred:hover .icon i {
+  color: #fff;
+}
+
+.features .iconbox-darkred:hover .icon path {
+  fill: #941616;
+}
+
+
+.features .iconbox-red i {
+  color: #de3737;
+}
+
+.features .iconbox-red:hover .icon i {
+  color: #fff;
+}
+
+.features .iconbox-red:hover .icon path {
+  fill: #de3737;
+}
+
+
+.features .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.features .icon-box i {
+  font-size: 48px;
+  float: left;
+}
+
+.features .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.features .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
 
 /* fireflys */
 .firefly {
@@ -1382,10 +1554,10 @@ p, li {
 @keyframes flash {
   0%, 30%, 100% {
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
+    box-shadow: 0 0 0vw 0vw rgb(255, 255, 255);
   }
   5% {
     opacity: 1;
-    box-shadow: 0 0 2vw 0.4vw yellow;
+    box-shadow: 0 0 2vw 0.4vw rgb(255, 255, 255);
   }
 }
