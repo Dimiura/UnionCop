@@ -1,14 +1,12 @@
-
-body, html 
-{
-    height: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+  height: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn
+/* .btn
 {
-  margin-left: 500px;
+  margin-left: 500px; 
   width: 150px;
   height: 50px;
   border: none;
@@ -21,103 +19,34 @@ body, html
   outline: rgba(red, green, blue, alpha);
   text-align: center;
 
-}
+} */
 
-.btn:hover
-{
-  box-shadow:inset 300px 0 0 0 #Fff;
-}
-
-.img-fluid
-{
-  width: 550px;
-  height: 350px;
-}
-
-.about-title
-{
+.about-title {
   color: #Fff;
 }
-.container-fluid
-{
-  z-index: 3;
+
+p, li {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+#logo {
+  width: 100px;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
   position: absolute;
-}
-.row{
-  margin:0;
-}
-
-
-.container{
- 
-  padding: 70px 0;
-}
-
-p,li
-{
-color: whitesmoke;
-font-size: 14px;
-}
-
-.navbar-brand
-{ 
-  font-size: 28px;
-  padding:0;
-  color:#Fff
-}
-
-#navbar-links a
-{
-  margin-right: 50px;
-  font-size: 18px;
-  color: #Fff;
-  padding: 1;
-  
-}
-
-.navbar-expand-lg .navbar-nav .nav-link
-{
-  padding: 2rem .40rem;
-}
-
-.navbar-brand:hover{
-  color:#Fff
-}
-
-header, .navbar
-{
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
   z-index: 3;
-background-color: rgb(3, 3, 3);
 }
 
-#nav-container{
-  padding-top: 150px;
-  padding-bottom: 0;
-}
-
-#logo
-{
-margin-left: 120px;
-width: 100px; 
-}
-
-
-.loader-wrapper
-{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-   
-}
-
-.loader 
-{
+.loader {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -127,8 +56,7 @@ width: 100px;
   animation: loader 2s infinite ease;
 }
 
-.loader-inner 
-{
+.loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
@@ -140,19 +68,15 @@ width: 100px;
   0% {
     transform: rotate(0deg);
   }
-  
   25% {
     transform: rotate(180deg);
   }
-  
   50% {
     transform: rotate(180deg);
   }
-  
   75% {
     transform: rotate(360deg);
   }
-  
   100% {
     transform: rotate(360deg);
   }
@@ -162,117 +86,108 @@ width: 100px;
   0% {
     height: 0%;
   }
-  
   25% {
     height: 0%;
   }
-  
   50% {
     height: 100%;
   }
-  
   75% {
     height: 100%;
   }
-  
   100% {
     height: 0%;
   }
-
 }
+
 @keyframes move-background {
   from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
+
 @-webkit-keyframes move-background {
   from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
 
-@-moz-keyframes move-background {    
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
 
-    @-webkit-keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to { 
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
 }
 
-.background-container{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right: 0;
-
+.background-container {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png);
- position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    z-index: 0;
-  
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
 }
 
-.twinkling{
-    width:10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-    background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
-   
-    
-    -moz-animation:move-background 33s linear infinite;
-  -ms-animation:move-background 33s linear infinite;
-  -o-animation:move-background 33s linear infinite;
-  -webkit-animation:move-background 33s linear infinite;
-  animation:move-background 33s linear infinite;
-    
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  -moz-animation: move-background 33s linear infinite;
+  -ms-animation: move-background 33s linear infinite;
+  -o-animation: move-background 33s linear infinite;
+  -webkit-animation: move-background 33s linear infinite;
+  animation: move-background 33s linear infinite;
 }
 
-.clouds{
-    opacity: 10%;
-    width:10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-    background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-   
-
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
+.clouds {
+  opacity: 10%;
+  width: 10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
 }
