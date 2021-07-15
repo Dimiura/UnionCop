@@ -11,17 +11,18 @@
   <title> Home | Union Cop </title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar menu navbar-expand-md navbar-dark bg-transparent px-3 mb-5">
+  <header id="header" class="fixed-top">
+    <div class="container-fluid">
+    <nav class="navbar nav-color navbar-expand-md navbar-dark px-3 fixed-top">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -52,44 +53,35 @@
 
 
 
-
-  <div class="container-fluid h-100">
-    <div class="row">
-      <div class="col-md-6">
-        <div
-          class="col-xl-4 col-lg-6 order-1 order-lg-2 landing-img aos-init aos-animate d-flex flex-column justify-content-center"
-          data-aos="zoom-in" data-aos-delay="150">
-          <div class="embed-responsive embed-responsive-16by9 me-4 ">
-            <video id="videoT" controls>
+  <section id="home" class="d-flex align-items-center h-100 ">
+    <div class="container-fluid aos-init aos-animate" data-aos="zoom-in-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-6 order-2 order-lg-1  landing-img aos-init aos-animate d-flex flex-column justify-content-center">
+          <div class="embed-responsive embed-responsive-16by9 d-flex flex-column justify-content-center  ">
+            <h1 class="text-white"> Welcome to Union</h3>
+            <video id="videoT" controls >
               <source src="vid/yt1s.com - Travis Scott  goosebumps ft Kendrick Lamar (1)_Trim.mp4" type="video/mp4">
             </video>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <H3 class="about-title text-white">Estamos apenas Testando</H3>
-        <P> TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE
-          TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE </p>
-        <h3 class="about-title text-white">Beneficios:</h3>
-        <ul id="about-list">
-          <li>teste teste teste testetesteteste teste teste teste teste teste teste teste teste teste teste teste
-          </li>
-          <li>teste teste teste testetesteteste teste teste teste teste teste teste teste teste teste teste teste
-          </li>
-          <li>teste teste teste testetesteteste teste teste teste teste teste teste teste teste teste teste teste
-          </li>
-          <li>teste teste teste testetesteteste teste teste teste teste teste teste teste teste teste teste teste
-          </li>
-          <li>teste teste teste testetesteteste teste teste teste teste teste teste teste teste teste teste teste
-          </li>
-        </ul>
-        <div>
-          <button type="button" class="btn btn-comprar"> Free Test </button>
+          <div class="col-xl-5 col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-xl-center">
+            <H4 class="about-title text-white">Sobre a Union Cop</H3>
+            <P> SEU TEXTO AQUI </p>
+            <h4 class="about-title text-white pl-2">Beneficios:</h3>
+            <ul id="about-list">
+              <li class="fs-6">Seu texto Aqui</li>
+              <li class="fs-6">Seu texto Aqui</li>
+              <li class="fs-6">Seu texto Aqui</li>
+              <li class="fs-6">Seu texto Aqui</li>
+              <li class="fs-6">Seu texto Aqui</li>
+            </ul>
+            <div>
+              <button type="button" class="btn btn-comprar"> Free Test </button>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
-  </div>
 
   </section>
 
@@ -192,6 +184,8 @@
 
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/script.js"></script>
@@ -209,6 +203,8 @@
       $(".loader-wrapper").delay(800).fadeOut("slow");
     });
   </script>
+
+
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

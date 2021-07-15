@@ -3,15 +3,17 @@ body, html
   height: 100%;
   text-align: center;
   background-image: url(/img/background.png);
+  scroll-behavior: smooth;
+}
+
+.nav-color{
+  background-color: black;
+  
 }
 
 #videoT
-{
-  width: 600px; 
-  
-  height: 300px; 
-  
-  border-radius:5px;
+{  
+  border-radius:15px;
 }
 
 .nav-hover::after
@@ -44,6 +46,7 @@ transition: width .3s;
   text-align: center;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .btn-dashboard:hover{
@@ -73,7 +76,7 @@ transition: width .3s;
 
 .btn-comprar
 {
-  width: 150px;
+  width: 200px;
   height: 50px;
   border: none;
   color: black;
