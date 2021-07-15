@@ -3,11 +3,11 @@ body, html
   height: 100%;
   text-align: center;
   background-image: url(/img/background.png);
-  scroll-behavior: smooth;
 }
 
 .nav-color{
   background-color: black;
+  z-index: 995;
   
 }
 
@@ -116,7 +116,7 @@ p, li {
   background-color: black;
   display: flex;
   justify-content: center;
-  z-index: 3;
+  z-index: 996;
 }
 
 .loader {
@@ -127,6 +127,7 @@ p, li {
   border: 4px solid #Fff;
   top: 50%;
   animation: loader 2s infinite ease;
+  z-index: 996;
 }
 
 .loader-inner {
@@ -135,6 +136,7 @@ p, li {
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
+  z-index: 997;
 }
 
 @keyframes loader {
@@ -192,12 +194,21 @@ section {
   overflow: hidden;
 }
 
-.section-title {
+.section-titulo {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.section-title h2 {
+.section-titulo h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 50px;
+}
+.section-titulo h1 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -207,13 +218,24 @@ section {
   padding-top: 50px;
 }
 
-.section-title h2::after {
+.section-titulo h1::after {
   content: '';
   position: absolute;
   display: block;
   width: 50px;
-  height: 3px;
-  background: #ffd106;
+  height: 6px;
+  background: #ffffff;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-titulo h2::after {
+ content:'';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 6px;
+  background: #000000;
   bottom: 0;
   left: calc(50% - 25px);
 }
