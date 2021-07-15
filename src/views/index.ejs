@@ -18,6 +18,7 @@
 
 </head>
 
+
 <body>
 
   <header>
@@ -41,11 +42,11 @@
                 <a class="nav-link fs-6 text-light nav-hover" href="#infos">Informações</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6 text-light nav-hover" href="perguntas">FAQ</a>
+                <a class="nav-link fs-6 text-light nav-hover" href="#perguntas">FAQ</a>
               </li>
             </ul>
             <div class="nav-right px-3">
-              <a class="btn btn-dashboard" href="#"> Discord </a>
+              <a class="btn btn-dashboard" href="#T"> Discord </a>
             </div>
           </div>
         </nav>
@@ -166,47 +167,65 @@
     </div>
   </section>
 
-  <section id="perguntas" class="FAQ section-bg bg-dark">
+  <section id="perguntas" class="FAQ section-bg bg-dark h-100">
     <div class="container aos-init aos-animate" data-aos="zoom-in-up">
       <div class="section-titulo">
         <h1 class="text-light">FAQ</h2>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6  align-items-stretch aos-init aos-animate" data-aos="zoom-in"
+        <div class="col-lg-4 col-md-6 align-items-stretch aos-init aos-animate" data-aos="zoom-in"
           data-aos-delay="100">
-          <h4 class="text-light">Teste</h4>
-          <p class="text-light">Seu texto aqui.
-          </p>
+          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-1" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
+          <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+          </a>
+          <div id="faq-item-1" class="collapse ">
+            <p class="text-light aos-init aos-animate" data-aos="fade-up">Resposta da pergunta aqui. </p>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in"
           data-aos-delay="200">
-          <h4 class="text-light">Teste</h4>
-          <p class="text-light">Seu texto aqui.
-          </p>
+          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-2" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
+            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+            </a>
+          <div id="faq-item-2" class="collapse ">
+          <p class="text-light">Resposta da pergunta aqui.</p>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in"
           data-aos-delay="300">
-          <h4 class="text-light">Teste</h4>
-          <p class="text-light">Seu texto aqui
-          </p>
+          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link " href="#faq-item-3" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
+            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+          </a>
+          <div id="faq-item-3" class="collapse ">
+          <p class="text-light">Resposta da pergunta aqui.</p>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
           data-aos-delay="100">
-          <h4 class="text-light">Teste</h4>
-          <p class="text-light"> Seu texto aqui.
-          </p>
+          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-4" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
+            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+          </a>
+          <div id="faq-item-4" class="collapse ">
+          <p class="text-light"> Resposta da pergunta aqui. </p>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos-delay="300"
           data-aos="zoom-in" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 aos-init">
-          <h4 class="text-light">Teste</h4>
-          <p class="text-light">Seu Texto Aqui.
-          </p>
+          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-5" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
+            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+          </a>
+          <div id="faq-item-5" class="collapse ">
+          <p class="text-light">Resposta da pergunta aqui.</p>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
           data-aos-delay="200">>
-          <h4 class="text-light"> Teste </h4>
-          <p class="text-light"> Seu texto aqui.
-          </p>
+          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-link nav-link nav-hover" href="#faq-item-6" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
+            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+          </a>
+          <div id="faq-item-6" class="collapse ">
+          <p class="text-light"> Resposta da pergunta aqui.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -215,9 +234,6 @@
 
 
 
-
-
-  <div class="firefly"></div>
   <div class="firefly"></div>
   <div class="firefly"></div>
   <div class="firefly"></div>

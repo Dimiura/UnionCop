@@ -8,6 +8,7 @@ body, html
 .nav-color{
   background-color: black;
   z-index: 995;
+  top:0;
   
 }
 
@@ -27,6 +28,22 @@ transition: width .3s;
 }
 
 .nav-hover:hover::after
+{
+  width: 100%;
+  transition: width .3s ;
+}
+
+.faq-hover::after
+{
+content: '';
+display: block;
+width: 0;
+height: 2px;
+background: #Fff;
+transition: width .3s;
+}
+
+.faq-hover:hover::after
 {
   width: 100%;
   transition: width .3s ;
