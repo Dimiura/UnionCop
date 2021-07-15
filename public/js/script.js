@@ -1,18 +1,9 @@
+$(document).ready(function(){
+    $('html, body').scrollTop(0);
 
-const menuItems = document.querySelectorAll('.menu a[href^="#"]');
-
-menuItems.ForEach(item=>{
-    item.addEventListener('click', scrollToIdonClick);
+    $(window).on('load', function() {
+    setTimeout(function(){
+        $('html, body').scrollTop(0);
+    }, 0);
+ });
 })
-
-
-function scrollToIdOnClick(event){
-    event.PreventDefault();
-    const element = event.target;
-    const to= id.getAttribute('href');
-    const to= document.querySelector(id).offsetTop;
-
-    window.scroll({
-        behavior: "smooth"
-    });
-}
