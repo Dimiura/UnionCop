@@ -1,16 +1,29 @@
+/* HOME */
+
 body, html 
 {
   height: 100%;
   text-align: center;
-  background-image: url(/img/background.png);
+  background-image: url(/img/thumb-1920-375412.jpg);
 }
 
-.nav-color{
-  background-color: black;
-  z-index: 995;
-  top:0;
-  
+.listaB
+{
+  list-style: none;
+  padding:0;
 }
+#header
+{transition: all 0.5s;
+ z-index: 995;
+}
+
+#header.header-scrolled, #header.header-inner-pages
+{
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 10%)
+}
+
 
 #videoT
 {  
@@ -33,22 +46,6 @@ transition: width .3s;
   transition: width .3s ;
 }
 
-.faq-hover::after
-{
-content: '';
-display: block;
-width: 0;
-height: 2px;
-background: #Fff;
-transition: width .3s;
-}
-
-.faq-hover:hover::after
-{
-  width: 100%;
-  transition: width .3s ;
-}
-
 .btn-dashboard
 {
   width: 130px;
@@ -59,7 +56,7 @@ transition: width .3s;
   transition: ease-out 0.3s;
   font-size: 20px;
   outline: none;
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid #ffd106;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -124,6 +121,8 @@ p, li {
   width: 100px;
 }
 
+
+/* PRELOADER */
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -225,26 +224,7 @@ section {
   position: relative;
   padding-top: 50px;
 }
-.section-titulo h1 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  padding-top: 50px;
-}
 
-.section-titulo h1::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 6px;
-  background: #ffffff;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
 
 .section-titulo h2::after {
  content:'';
@@ -376,6 +356,70 @@ section {
   font-size: 15px;
   color: #000000;
 }
+
+/* FAQ */
+
+.FAQ
+{
+  background-color: black ;
+}
+.section-titulo h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.section-titulo h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 6px;
+  background: #ffd106;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.FAQ .lista-faqs li
+{
+    margin-top: 15px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.FAQ .lista-faqs ul{
+  list-style: none;
+}
+
+.FAQ .lista-faqs a {
+  display: block;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  color: #000000;
+  outline: none;
+  text-decoration: none;
+}
+
+.FAQ .lista-faqs p 
+{
+  font-size: 18px;
+}
+
+.fa-arrow-circle-down{
+  color: #fcb900;
+}
+
+
 
 
 

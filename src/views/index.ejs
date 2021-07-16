@@ -21,10 +21,10 @@
 
 <body>
 
-  <header>
+  <header id="header" class="fixed-top">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <nav class="navbar nav-color navbar-expand-md navbar-dark px-3 fixed-top">
+        <nav class="navbar nav-color navbar-expand-md navbar-dark px-3 ">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -70,14 +70,14 @@
         </div>
         <div class="col-xl-5 col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-xl-center">
           <H4 class="about-title text-white">Sobre a Union Cop</H3>
-            <P> SEU TEXTO AQUI </p>
+            <h5 class="text-light"> SEU TEXTO AQUI </h5>
             <h4 class="about-title text-white pl-2">Beneficios:</h3>
-              <ul id="about-list">
-                <li class="fs-6">Seu texto Aqui</li>
-                <li class="fs-6">Seu texto Aqui</li>
-                <li class="fs-6">Seu texto Aqui</li>
-                <li class="fs-6">Seu texto Aqui</li>
-                <li class="fs-6">Seu texto Aqui</li>
+              <ul id="about-list" class="listaB ">
+                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
               </ul>
               <div>
                 <button type="button" class="btn btn-comprar"> Free Test </button>
@@ -167,66 +167,54 @@
     </div>
   </section>
 
-  <section id="perguntas" class="FAQ section-bg bg-dark h-100">
+  <section id="perguntas" class="FAQ h-100">
     <div class="container aos-init aos-animate" data-aos="zoom-in-up">
       <div class="section-titulo">
-        <h1 class="text-light">FAQ</h2>
+        <h1 class="text-light">FAQ</h1>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 align-items-stretch aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="100">
-          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-1" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
-          <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
-          </a>
-          <div id="faq-item-1" class="collapse ">
-            <p class="text-light aos-init aos-animate" data-aos="fade-up">Resposta da pergunta aqui. </p>
+      <div class="lista-faqs">
+        <ul>
+          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+            <a data-bs-toggle="collapse" class="collapsed" href="#primeira-pergunta" onclick="return false;" aria-expanded="false">Sua pergunta?
+              <i class="fas fa-arrow-circle-down icon-show"></i></a>
+          <div id="primeira-pergunta" class="collapse">
+            <p class="text-dark"> Resposta para pergunta aqui.</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="200">
-          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-2" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
-            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
+          </li>
+          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+            <a data-bs-toggle="collapse" href="#segunda-pergunta" class="collapsed" onclick="return false;"
+              aria-expanded="false"> Sua pergunta? 
+              <i class="fas fa-arrow-circle-down icon-show"></i>
             </a>
-          <div id="faq-item-2" class="collapse ">
-          <p class="text-light">Resposta da pergunta aqui.</p>
+          <div id="segunda-pergunta" class="collapse">
+            <p class="text-dark"> Resposta para pergunta aqui.</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="300">
-          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link " href="#faq-item-3" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
-            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
-          </a>
-          <div id="faq-item-3" class="collapse ">
-          <p class="text-light">Resposta da pergunta aqui.</p>
+          </li>
+          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+            <a data-bs-toggle="collapse" href="#terceira-pergunta" class="collapsed" onclick="return false;"
+              aria-expanded="false"> Sua pergunta? 
+              <i class="fas fa-arrow-circle-down icon-show"></i></a>
+          <div id="terceira-pergunta" class="collapse" >
+            <p class="text-dark"> Resposta para pergunta aqui.</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="100">
-          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-4" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
-            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
-          </a>
-          <div id="faq-item-4" class="collapse ">
-          <p class="text-light"> Resposta da pergunta aqui. </p>
+          </li>
+          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+            <a data-bs-toggle="collapse" href="#quarta-pergunta" class="collapsed" onclick="return false;"
+              aria-expanded="false"> Sua pergunta? 
+              <i class="fas fa-arrow-circle-down icon-show"></i></a>
+          <div id="quarta-pergunta" class="collapse">
+            <p class="text-dark"> Resposta para pergunta aqui.</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos-delay="300"
-          data-aos="zoom-in" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 aos-init">
-          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-hover nav-link" href="#faq-item-5" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
-            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
-          </a>
-          <div id="faq-item-5" class="collapse ">
-          <p class="text-light">Resposta da pergunta aqui.</p>
+          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+            <a data-bs-toggle="collapse" href="#quinta-pergunta" class="collapsed" onclick="return false;"
+              aria-expanded="false"> Sua pergunta? 
+              <i class="fas fa-arrow-circle-down icon-show"></i></a>
+          <div id="quinta-pergunta" class="collapse">
+            <p class="text-dark"> Resposta para pergunta aqui.</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="200">>
-          <a data-bs-toggle="collapse" class="collapsed text-light faq-pergunta fs-5 aos-init faq-link nav-link nav-hover" href="#faq-item-6" onclick="return false;" aria-expanded="false" data-aos="fade-up" data-aos-delay="100"> Sua pergunta aqui? 
-            <i class="fas fa-arrow-down icon-show" aria-hidden="true"></i>
-          </a>
-          <div id="faq-item-6" class="collapse ">
-          <p class="text-light"> Resposta da pergunta aqui.</p>
-          </div>
-        </div>
+          </li>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
