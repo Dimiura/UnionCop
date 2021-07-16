@@ -120,7 +120,15 @@ p, li {
 #logo {
   width: 100px;
 }
+/* Footer */
 
+#rodapé
+{
+color: #000000;
+ background-color: #fcb900;
+
+ height: 200px;
+}
 
 /* PRELOADER */
 .loader-wrapper {
