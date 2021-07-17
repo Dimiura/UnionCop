@@ -1,53 +1,53 @@
 /* HOME */
 
-body, html 
-{
+body, html {
   height: 100%;
   text-align: center;
   background-image: url(/img/thumb-1920-375412.jpg);
 }
 
-.listaB
-{
-  list-style: none;
-  padding:0;
+header{
+  height: 120px;
 }
-#header
-{transition: all 0.5s;
- z-index: 995;
+.listaB {
+  list-style: none;
+  padding: 0;
 }
 
-#header.header-scrolled, #header.header-inner-pages
-{
+
+
+.header-scrolled, .header-inner-pages {
+  transition: all 0.5s;
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 28px 0 rgb(0 0 0 / 10%)
 }
 
+/* encapsulamento do header */
 
-#videoT
-{  
-  border-radius:15px;
+.navbar-wrapper {
+  height: 120px;
 }
 
-.nav-hover::after
-{
-content: '';
-display: block;
-width: 0;
-height: 2px;
-background: #Fff;
-transition: width .3s;
+#videoT {
+  border-radius: 15px;
 }
 
-.nav-hover:hover::after
-{
+.nav-hover::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #Fff;
+  transition: width .3s;
+}
+
+.nav-hover:hover::after {
   width: 100%;
-  transition: width .3s ;
+  transition: width .3s;
 }
 
-.btn-dashboard
-{
+.btn-dashboard {
   width: 130px;
   height: 50px;
   border: none;
@@ -63,10 +63,11 @@ transition: width .3s;
   text-align: center;
 }
 
-.btn-dashboard:hover{
+.btn-dashboard:hover {
   color: rgb(0, 0, 0)
 }
-.btn-dashboard::before{
+
+.btn-dashboard::before {
   transition: 0.5s all ease;
   position: absolute;
   top: 0px;
@@ -78,34 +79,30 @@ transition: width .3s;
   background-color: #ffd106;
 }
 
-.btn-dashboard:hover:before
-{
+.btn-dashboard:hover:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
   z-index: -1;
-
 }
 
-.btn-comprar
-{
+.btn-comprar {
   width: 200px;
   height: 50px;
   border: none;
   color: black;
   background-color: #ffd106;
   border-radius: 4px;
-  box-shadow:  inset 0 0 0 0 #Fff;
+  box-shadow: inset 0 0 0 0 #Fff;
   transition: ease-out 0.3s;
   font-size: 20px;
   outline: rgba(red, green, blue, alpha);
   text-align: center;
 }
 
-.btn-comprar:hover
-{
-  box-shadow:inset 300px 0 0 0 #Fff;
+.btn-comprar:hover {
+  box-shadow: inset 300px 0 0 0 #Fff;
 }
 
 .about-title {
@@ -120,17 +117,17 @@ p, li {
 #logo {
   width: 100px;
 }
+
 /* Footer */
 
-#rodapé
-{
-color: #000000;
- background-color: #fcb900;
-
- height: 200px;
+#rodapé {
+  color: #000000;
+  background-color: #fcb900;
+  height: 200px;
 }
 
 /* PRELOADER */
+
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -200,15 +197,15 @@ color: #000000;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* features */
@@ -233,9 +230,8 @@ section {
   padding-top: 50px;
 }
 
-
 .section-titulo h2::after {
- content:'';
+  content: '';
   position: absolute;
   display: block;
   width: 50px;
@@ -248,7 +244,6 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
 
 .icon-box-img {
   width: 100%;
@@ -285,8 +280,7 @@ section {
 }
 
 .features .icon-box h4 a {
-  color: #ffd106
-  transition ease-in-out 0.3s;
+  color: #ffd106 transition ease-in-out 0.3s;
 }
 
 .features .icon-box p {
@@ -336,7 +330,6 @@ section {
   fill: #ffd106;
 }
 
-
 .features .iconbox-red i {
   color: #fffefe;
 }
@@ -348,7 +341,6 @@ section {
 .features .iconbox-red:hover .icon path {
   fill: #ffd106;
 }
-
 
 .features .icon-box h4 {
   font-size: 20px;
@@ -367,10 +359,10 @@ section {
 
 /* FAQ */
 
-.FAQ
-{
-  background-color: black ;
+.FAQ {
+  background-color: black;
 }
+
 .section-titulo h1 {
   font-size: 32px;
   font-weight: bold;
@@ -392,16 +384,15 @@ section {
   left: calc(50% - 25px);
 }
 
-.FAQ .lista-faqs li
-{
-    margin-top: 15px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 5px;
-    position: relative;
+.FAQ .lista-faqs li {
+  margin-top: 15px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
 }
 
-.FAQ .lista-faqs ul{
+.FAQ .lista-faqs ul {
   list-style: none;
 }
 
@@ -418,20 +409,16 @@ section {
   text-decoration: none;
 }
 
-.FAQ .lista-faqs p 
-{
+.FAQ .lista-faqs p {
   font-size: 18px;
 }
 
-.fa-arrow-circle-down{
+.fa-arrow-circle-down {
   color: #fcb900;
 }
 
-
-
-
-
 /* fireflys */
+
 .firefly {
   position: fixed;
   left: 50%;
@@ -443,6 +430,7 @@ section {
   pointer-events: none;
   z-index: 1;
 }
+
 .firefly::before, .firefly::after {
   content: "";
   position: absolute;
@@ -451,11 +439,13 @@ section {
   border-radius: 50%;
   transform-origin: -10vw;
 }
+
 .firefly::before {
   background: rgb(255, 255, 255);
   opacity: 0.4;
   animation: drift ease alternate infinite;
 }
+
 .firefly::after {
   background: white;
   opacity: 0;
@@ -466,9 +456,11 @@ section {
 .firefly:nth-child(1) {
   animation-name: move1;
 }
+
 .firefly:nth-child(1)::before {
   animation-duration: 10s;
 }
+
 .firefly:nth-child(1)::after {
   animation-duration: 10s, 10035ms;
   animation-delay: 0ms, 4963ms;
@@ -548,12 +540,15 @@ section {
     transform: translateX(49vw) translateY(41vh) scale(0.59);
   }
 }
+
 .firefly:nth-child(2) {
   animation-name: move2;
 }
+
 .firefly:nth-child(2)::before {
   animation-duration: 12s;
 }
+
 .firefly:nth-child(2)::after {
   animation-duration: 12s, 10360ms;
   animation-delay: 0ms, 4538ms;
@@ -633,12 +628,15 @@ section {
     transform: translateX(-40vw) translateY(-29vh) scale(0.92);
   }
 }
+
 .firefly:nth-child(3) {
   animation-name: move3;
 }
+
 .firefly:nth-child(3)::before {
   animation-duration: 14s;
 }
+
 .firefly:nth-child(3)::after {
   animation-duration: 14s, 6483ms;
   animation-delay: 0ms, 1843ms;
@@ -727,12 +725,15 @@ section {
     transform: translateX(30vw) translateY(30vh) scale(0.91);
   }
 }
+
 .firefly:nth-child(4) {
   animation-name: move4;
 }
+
 .firefly:nth-child(4)::before {
   animation-duration: 15s;
 }
+
 .firefly:nth-child(4)::after {
   animation-duration: 15s, 9543ms;
   animation-delay: 0ms, 4656ms;
@@ -800,12 +801,15 @@ section {
     transform: translateX(33vw) translateY(4vh) scale(0.87);
   }
 }
+
 .firefly:nth-child(5) {
   animation-name: move5;
 }
+
 .firefly:nth-child(5)::before {
   animation-duration: 15s;
 }
+
 .firefly:nth-child(5)::after {
   animation-duration: 15s, 9152ms;
   animation-delay: 0ms, 3594ms;
@@ -870,12 +874,15 @@ section {
     transform: translateX(22vw) translateY(-23vh) scale(0.53);
   }
 }
+
 .firefly:nth-child(6) {
   animation-name: move6;
 }
+
 .firefly:nth-child(6)::before {
   animation-duration: 16s;
 }
+
 .firefly:nth-child(6)::after {
   animation-duration: 16s, 7056ms;
   animation-delay: 0ms, 2797ms;
@@ -961,12 +968,15 @@ section {
     transform: translateX(-25vw) translateY(8vh) scale(0.27);
   }
 }
+
 .firefly:nth-child(7) {
   animation-name: move7;
 }
+
 .firefly:nth-child(7)::before {
   animation-duration: 13s;
 }
+
 .firefly:nth-child(7)::after {
   animation-duration: 13s, 8807ms;
   animation-delay: 0ms, 7601ms;
@@ -1037,12 +1047,15 @@ section {
     transform: translateX(-27vw) translateY(-7vh) scale(0.68);
   }
 }
+
 .firefly:nth-child(8) {
   animation-name: move8;
 }
+
 .firefly:nth-child(8)::before {
   animation-duration: 15s;
 }
+
 .firefly:nth-child(8)::after {
   animation-duration: 15s, 9375ms;
   animation-delay: 0ms, 5607ms;
@@ -1137,12 +1150,15 @@ section {
     transform: translateX(1vw) translateY(37vh) scale(0.95);
   }
 }
+
 .firefly:nth-child(9) {
   animation-name: move9;
 }
+
 .firefly:nth-child(9)::before {
   animation-duration: 10s;
 }
+
 .firefly:nth-child(9)::after {
   animation-duration: 10s, 7805ms;
   animation-delay: 0ms, 7883ms;
@@ -1204,12 +1220,15 @@ section {
     transform: translateX(-10vw) translateY(-12vh) scale(0.94);
   }
 }
+
 .firefly:nth-child(10) {
   animation-name: move10;
 }
+
 .firefly:nth-child(10)::before {
   animation-duration: 15s;
 }
+
 .firefly:nth-child(10)::after {
   animation-duration: 15s, 9082ms;
   animation-delay: 0ms, 4491ms;
@@ -1289,12 +1308,15 @@ section {
     transform: translateX(-46vw) translateY(16vh) scale(0.69);
   }
 }
+
 .firefly:nth-child(11) {
   animation-name: move11;
 }
+
 .firefly:nth-child(11)::before {
   animation-duration: 14s;
 }
+
 .firefly:nth-child(11)::after {
   animation-duration: 14s, 9354ms;
   animation-delay: 0ms, 6138ms;
@@ -1365,12 +1387,15 @@ section {
     transform: translateX(-28vw) translateY(40vh) scale(0.68);
   }
 }
+
 .firefly:nth-child(12) {
   animation-name: move12;
 }
+
 .firefly:nth-child(12)::before {
   animation-duration: 14s;
 }
+
 .firefly:nth-child(12)::after {
   animation-duration: 14s, 7168ms;
   animation-delay: 0ms, 1643ms;
@@ -1456,12 +1481,15 @@ section {
     transform: translateX(-5vw) translateY(9vh) scale(0.99);
   }
 }
+
 .firefly:nth-child(13) {
   animation-name: move13;
 }
+
 .firefly:nth-child(13)::before {
   animation-duration: 18s;
 }
+
 .firefly:nth-child(13)::after {
   animation-duration: 18s, 10351ms;
   animation-delay: 0ms, 8498ms;
@@ -1529,12 +1557,15 @@ section {
     transform: translateX(-47vw) translateY(10vh) scale(0.32);
   }
 }
+
 .firefly:nth-child(14) {
   animation-name: move14;
 }
+
 .firefly:nth-child(14)::before {
   animation-duration: 13s;
 }
+
 .firefly:nth-child(14)::after {
   animation-duration: 13s, 5746ms;
   animation-delay: 0ms, 1370ms;
@@ -1596,12 +1627,15 @@ section {
     transform: translateX(-32vw) translateY(-18vh) scale(0.49);
   }
 }
+
 .firefly:nth-child(15) {
   animation-name: move15;
 }
+
 .firefly:nth-child(15)::before {
   animation-duration: 18s;
 }
+
 .firefly:nth-child(15)::after {
   animation-duration: 18s, 10687ms;
   animation-delay: 0ms, 6785ms;
@@ -1684,6 +1718,7 @@ section {
     transform: translateX(34vw) translateY(34vh) scale(0.73);
   }
 }
+
 @keyframes drift {
   0% {
     transform: rotate(0deg);
@@ -1692,6 +1727,7 @@ section {
     transform: rotate(360deg);
   }
 }
+
 @keyframes flash {
   0%, 30%, 100% {
     opacity: 0;

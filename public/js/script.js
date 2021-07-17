@@ -24,11 +24,13 @@ $('html, body').animate({
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 25) {
-        $('.fixed-top').addClass('header-scrolled');
-    } else {
-        $('.fixed-top').removeClass('header-scrolled');
-    }
+    // if (scroll >= 25) {
+    //     $('.navbar-wrapper').addClass('header-scrolled');
+    //     $('.navbar').addClass('header-scrolled');
+    // } else {
+    //     $('.navbar-wrapper').removeClass('header-scrolled');
+    //     $('.navbar').removeClass('header-scrolled');
+    // }
 });
 
 OS.init();

@@ -9,7 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/logo.ico">
   <title> Home | Union Cop </title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -21,220 +23,215 @@
 
 <body>
 
-  <header id="header" class="fixed-top">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <nav class="navbar nav-color navbar-expand-md navbar-dark px-3 ">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a href="#" class="navbar-brand">
-            <img id="logo" src="img/logo.png" alt="Union Cop"> Union Cop
-          </a>
-          <div class="collapse menu navbar-collapse justify-content-end " id="navbarToggleExternalContent">
-            <ul class="navbar-nav ">
-              <li class="nav-item active">
-                <a class="nav-link fs-6 text-light nav-hover" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-6 text-light nav-hover" href="#infos">Informações</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-6 text-light nav-hover" href="#perguntas">FAQ</a>
-              </li>
-            </ul>
-            <div class="nav-right px-3">
-              <a class="btn btn-dashboard" href="#T"> Discord </a>
-            </div>
+  <header>
+    <div class="navbar-wrapper fixed-top header-scrolled" id="#header">
+      <nav class="navbar navbar-expand-md navbar-dark header-scrolled px-3">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <img id="logo" src="img/logo.png" alt="Union Cop"> Union Cop
+        </a>
+        <div class="collapse menu navbar-collapse justify-content-end " id="navbarToggleExternalContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link fs-6 text-light nav-hover" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 text-light nav-hover" href="#infos">Informações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 text-light nav-hover" href="#perguntas">FAQ</a>
+            </li>
+          </ul>
+          <div class="nav-right px-3">
+            <a class="btn btn-dashboard" href="#T"> Discord </a>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
 
+  <div>
 
-
-  <section id="home" class="d-flex align-items-center h-100 ">
-    <div class="container-fluid aos-init aos-animate" data-aos="zoom-in-up">
-      <div class="row justify-content-center">
-        <div
-          class="col-xl-4 col-lg-6 order-2 order-lg-1  landing-img aos-init aos-animate d-flex flex-column justify-content-center">
-          <div class="embed-responsive embed-responsive-16by9 d-flex flex-column justify-content-center  ">
-            <h1 class="text-white"> Welcome to Union</h3>
-              <video id="videoT" controls>
-                <source src="vid/yt1s.com - Travis Scott  goosebumps ft Kendrick Lamar (1)_Trim.mp4" type="video/mp4">
-              </video>
+    <section id="home" class="d-flex align-items-center">
+      <div class="container-fluid aos-init aos-animate" data-aos="zoom-in-up">
+        <div class="row justify-content-center px-3">
+          <div class="col-md-6 landing-img aos-init aos-animate d-flex flex-column justify-content-center py-3">
+            <div class="embed-responsive embed-responsive-16by9 d-flex flex-column justify-content-center  ">
+              <h1 class="text-white"> Welcome to Union</h3>
+                <video id="videoT" controls>
+                  <source src="vid/yt1s.com - Travis Scott  goosebumps ft Kendrick Lamar (1)_Trim.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+          <div class="col-md-6  d-flex flex-column justify-content-xl-center py-3">
+            <H4 class="about-title text-white">Sobre a Union Cop</H3>
+              <h5 class="text-light"> SEU TEXTO AQUI </h5>
+              <h4 class="about-title text-white pl-2">Beneficios:</h3>
+                <ul id="about-list" class="listaB ">
+                  <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                </ul>
+                <div>
+                  <button type="button" class="btn btn-comprar"> Free Test </button>
+                </div>
           </div>
         </div>
-        <div class="col-xl-5 col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-xl-center">
-          <H4 class="about-title text-white">Sobre a Union Cop</H3>
-            <h5 class="text-light"> SEU TEXTO AQUI </h5>
-            <h4 class="about-title text-white pl-2">Beneficios:</h3>
-              <ul id="about-list" class="listaB ">
-                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
-                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
-                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
-                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
-                <li class="fs-6"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
-              </ul>
-              <div>
-                <button type="button" class="btn btn-comprar"> Free Test </button>
+      </div>
+    </section>
+
+
+    <section id="infos" class="features section-bg bg-warning w-100">
+      <div class="container aos-init aos-animate" data-aos="zoom-in-up">
+        <div class="section-titulo">
+          <h2 class="text-dark">Informações</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6  align-items-stretch aos-init aos-animate" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="icon-box iconbox-lightred">
+              <div class="icon">
+                <i class="fas fa-desktop" aria-hidden="true"></i>
               </div>
+              <h4 class="text-dark">Teste</h4>
+              <p class="text-dark">Seu texto aqui.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <i class="fas fa-frog" aria-hidden="true"></i>
+              </div>
+              <h4 class="text-dark">Teste</h4>
+              <p class="text-dark">Seu texto aqui.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box iconbox-darkred">
+              <div class="icon">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+              </div>
+              <h4 class="text-dark">Teste</h4>
+              <p class="text-dark">Seu texto aqui
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
+            data-aos-delay="100">
+            <div class="icon-box iconbox-lightred">
+              <div class="icon">
+                <i class="fas fa-pen" aria-hidden="true"></i>
+              </div>
+              <h4 class="text-dark">Teste</h4>
+              <p class="text-dark"> Seu texto aqui.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos-delay="300"
+            data-aos="zoom-in" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 aos-init">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <h4 class="text-rss">Teste</h4>
+              <p class="text-dark">Seu Texto Aqui.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box iconbox-darkred">
+              <div class="icon">
+                <i class="fas fa-skull" aria-hidden="true"></i>
+              </div>
+              <h4 class="text-dark"> Teste </h4>
+              <p class="text-dark"> Seu texto aqui.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-    </div>
+    </section>
 
-  </section>
-
-
-  <section id="infos" class="features section-bg bg-warning">
-    <div class="container aos-init aos-animate" data-aos="zoom-in-up">
-      <div class="section-titulo">
-        <h2 class="text-dark">Informações</h2>
+    <section id="perguntas" class="FAQ h-100">
+      <div class="container aos-init aos-animate" data-aos="zoom-in-up">
+        <div class="section-titulo">
+          <h1 class="text-light">FAQ</h1>
+        </div>
+        <div class="lista-faqs">
+          <ul>
+            <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+              <a data-bs-toggle="collapse" class="collapsed" href="#primeira-pergunta" onclick="return false;"
+                aria-expanded="false">Sua pergunta?
+                <i class="fas fa-arrow-circle-down icon-show"></i></a>
+              <div id="primeira-pergunta" class="collapse">
+                <p class="text-dark"> Resposta para pergunta aqui.</p>
+              </div>
+            </li>
+            <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+              <a data-bs-toggle="collapse" href="#segunda-pergunta" class="collapsed" onclick="return false;"
+                aria-expanded="false"> Sua pergunta?
+                <i class="fas fa-arrow-circle-down icon-show"></i>
+              </a>
+              <div id="segunda-pergunta" class="collapse">
+                <p class="text-dark"> Resposta para pergunta aqui.</p>
+              </div>
+            </li>
+            <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+              <a data-bs-toggle="collapse" href="#terceira-pergunta" class="collapsed" onclick="return false;"
+                aria-expanded="false"> Sua pergunta?
+                <i class="fas fa-arrow-circle-down icon-show"></i></a>
+              <div id="terceira-pergunta" class="collapse">
+                <p class="text-dark"> Resposta para pergunta aqui.</p>
+              </div>
+            </li>
+            <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+              <a data-bs-toggle="collapse" href="#quarta-pergunta" class="collapsed" onclick="return false;"
+                aria-expanded="false"> Sua pergunta?
+                <i class="fas fa-arrow-circle-down icon-show"></i></a>
+              <div id="quarta-pergunta" class="collapse">
+                <p class="text-dark"> Resposta para pergunta aqui.</p>
+              </div>
+            <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
+              <a data-bs-toggle="collapse" href="#quinta-pergunta" class="collapsed" onclick="return false;"
+                aria-expanded="false"> Sua pergunta?
+                <i class="fas fa-arrow-circle-down icon-show"></i></a>
+              <div id="quinta-pergunta" class="collapse">
+                <p class="text-dark"> Resposta para pergunta aqui.</p>
+              </div>
+            </li>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6  align-items-stretch aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="100">
-          <div class="icon-box iconbox-lightred">
-            <div class="icon">
-              <i class="fas fa-desktop" aria-hidden="true"></i>
-            </div>
-            <h4 class="text-dark">Teste</h4>
-            <p class="text-dark">Seu texto aqui.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="200">
-          <div class="icon-box iconbox-red">
-            <div class="icon">
-              <i class="fas fa-frog" aria-hidden="true"></i>
-            </div>
-            <h4 class="text-dark">Teste</h4>
-            <p class="text-dark">Seu texto aqui.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="300">
-          <div class="icon-box iconbox-darkred">
-            <div class="icon">
-              <i class="fas fa-moon" aria-hidden="true"></i>
-            </div>
-            <h4 class="text-dark">Teste</h4>
-            <p class="text-dark">Seu texto aqui
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="100">
-          <div class="icon-box iconbox-lightred">
-            <div class="icon">
-              <i class="fas fa-pen" aria-hidden="true"></i>
-            </div>
-            <h4 class="text-dark">Teste</h4>
-            <p class="text-dark"> Seu texto aqui.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos-delay="300"
-          data-aos="zoom-in" class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 aos-init">
-          <div class="icon-box iconbox-red">
-            <div class="icon">
-              <i class="fas fa-laptop"></i>
-            </div>
-            <h4 class="text-rss">Teste</h4>
-            <p class="text-dark">Seu Texto Aqui.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6  align-items-stretch mt-4 aos-init aos-animate" data-aos="zoom-in"
-          data-aos-delay="200">
-          <div class="icon-box iconbox-darkred">
-            <div class="icon">
-              <i class="fas fa-skull" aria-hidden="true"></i>
-            </div>
-            <h4 class="text-dark"> Teste </h4>
-            <p class="text-dark"> Seu texto aqui.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="perguntas" class="FAQ h-100">
-    <div class="container aos-init aos-animate" data-aos="zoom-in-up">
-      <div class="section-titulo">
-        <h1 class="text-light">FAQ</h1>
-      </div>
-      <div class="lista-faqs">
-        <ul>
-          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
-            <a data-bs-toggle="collapse" class="collapsed" href="#primeira-pergunta" onclick="return false;"
-              aria-expanded="false">Sua pergunta?
-              <i class="fas fa-arrow-circle-down icon-show"></i></a>
-            <div id="primeira-pergunta" class="collapse">
-              <p class="text-dark"> Resposta para pergunta aqui.</p>
-            </div>
-          </li>
-          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
-            <a data-bs-toggle="collapse" href="#segunda-pergunta" class="collapsed" onclick="return false;"
-              aria-expanded="false"> Sua pergunta?
-              <i class="fas fa-arrow-circle-down icon-show"></i>
-            </a>
-            <div id="segunda-pergunta" class="collapse">
-              <p class="text-dark"> Resposta para pergunta aqui.</p>
-            </div>
-          </li>
-          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
-            <a data-bs-toggle="collapse" href="#terceira-pergunta" class="collapsed" onclick="return false;"
-              aria-expanded="false"> Sua pergunta?
-              <i class="fas fa-arrow-circle-down icon-show"></i></a>
-            <div id="terceira-pergunta" class="collapse">
-              <p class="text-dark"> Resposta para pergunta aqui.</p>
-            </div>
-          </li>
-          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
-            <a data-bs-toggle="collapse" href="#quarta-pergunta" class="collapsed" onclick="return false;"
-              aria-expanded="false"> Sua pergunta?
-              <i class="fas fa-arrow-circle-down icon-show"></i></a>
-            <div id="quarta-pergunta" class="collapse">
-              <p class="text-dark"> Resposta para pergunta aqui.</p>
-            </div>
-          <li data-aos="zoom-in-up" data-aos-delay="100" class="aos-init">
-            <a data-bs-toggle="collapse" href="#quinta-pergunta" class="collapsed" onclick="return false;"
-              aria-expanded="false"> Sua pergunta?
-              <i class="fas fa-arrow-circle-down icon-show"></i></a>
-            <div id="quinta-pergunta" class="collapse">
-              <p class="text-dark"> Resposta para pergunta aqui.</p>
-            </div>
-          </li>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
 
 
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-  <div class="firefly"></div>
-
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+  </div>
   <footer id="rodapé" class="d-flex">
     <div class="container">
     </div>
