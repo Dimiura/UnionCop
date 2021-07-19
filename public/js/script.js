@@ -16,7 +16,7 @@ var id = $(this).attr('href'),
 targetOffset=$(id).offset().top,
 menuHeight= $('nav').innerHeight();
 $('html, body').animate({
-    scrollTop: targetOffset - 80
+    scrollTop: targetOffset - 100
 }, 500);
 });
 
@@ -25,11 +25,11 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     // if (scroll >= 25) {
-    //     $('.navbar-wrapper').addClass('header-scrolled');
-    //     $('.navbar').addClass('header-scrolled');
+        // $('.navbar-wrapper').addClass('header-scrolled');
+        // $('.navbar').addClass('header-scrolled');
     // } else {
-    //     $('.navbar-wrapper').removeClass('header-scrolled');
-    //     $('.navbar').removeClass('header-scrolled');
+        // $('.navbar-wrapper').removeClass('header-scrolled');
+        // $('.navbar').removeClass('header-scrolled');
     // }
 });
 

@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/logo.ico">
   <title> Home | Union Cop </title>
-  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
@@ -23,9 +22,12 @@
 
 <body>
 
+  
+  <!-- Navbar Menu -->
+
   <header>
-    <div class="navbar-wrapper fixed-top header-scrolled" id="#header">
-      <nav class="navbar navbar-expand-md navbar-dark header-scrolled px-3">
+    <div class="navbar-wrapper fixed-top " id="#header">
+      <nav class="navbar navbar-expand-md nav-color navbar-dark px-3 mobile-only">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +47,9 @@
             <li class="nav-item">
               <a class="nav-link fs-6 text-light nav-hover" href="#perguntas">FAQ</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 text-light nav-hover" href="#Tools">Tools</a>
+            </li>
           </ul>
           <div class="nav-right px-3">
             <a class="btn btn-dashboard" href="#T"> Discord </a>
@@ -54,10 +59,12 @@
     </div>
   </header>
 
-  <div>
+
+  <!-- Home -->
+
 
     <section id="home" class="d-flex align-items-center">
-      <div class="container-fluid aos-init aos-animate" data-aos="zoom-in-up">
+      <div class="container-fluid aos-init aos-animate " data-aos="zoom-in-up">
         <div class="row justify-content-center px-3">
           <div class="col-md-6 landing-img aos-init aos-animate d-flex flex-column justify-content-center py-3">
             <div class="embed-responsive embed-responsive-16by9 d-flex flex-column justify-content-center  ">
@@ -85,6 +92,9 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Features -->
 
 
     <section id="infos" class="features section-bg bg-warning w-100">
@@ -159,10 +169,40 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
+
+
+
+    <!-- Tools -->
+    <section id="Tools" class="tools d-flex align-items-center">
+      <div class="container-fluid aos-init aos-animate " data-aos="zoom-in-up">
+        <div class="section-titulo">
+          <h1 class="text-dark">TOOLS</h1>
+        </div>
+        <div class="row justify-content-center px-3">
+          <div class="col-md-6 landing-img aos-init aos-animate d-flex flex-column justify-content-center py-3">
+            <img src="img/video.png" class="img-fluid h-90 w-75" alt="Responsive image">
+          </div>
+          <div class="col-md-6  d-flex flex-column justify-content-xl-center py-3">
+              <h2 class="about-title text-dark pl-2"> Ferramentas</h2>
+                <ul id="about-list" class="listaB ">
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                  <li class="fs-5 text-dark"><i class="far fa-check-circle"></i> Seu texto Aqui</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
 
     <section id="perguntas" class="FAQ h-100">
       <div class="container aos-init aos-animate" data-aos="zoom-in-up">
@@ -218,6 +258,7 @@
     </section>
 
 
+<!-- Particulas -->
 
 
     <div class="firefly"></div>
@@ -232,11 +273,16 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
   </div>
-  <footer id="rodapé" class="d-flex">
-    <div class="container">
-    </div>
+
+  <!-- Rodapé -->
+
+
+  <footer>
 
   </footer>
+
+  <!-- Scripts -->
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
