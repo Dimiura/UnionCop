@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/form', (req, res) => {
-  
+  res.render('form/index')
 });
 
 app.listen(3000, () => {console.log('Servidor ON')});
