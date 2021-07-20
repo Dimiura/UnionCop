@@ -145,8 +145,27 @@ p, li {
 }
 
 /* Footer */
+#footer
+{
+  background-color: #000000;
+  height: 18%;
+}
 
+.text-footer
+{
+  font-size: 20px;
+}
 
+#logo-footer
+{
+  width: 50px;
+}
+
+.iconFooter
+{
+  font-size: 30px;
+  color: whitesmoke;
+}
 
 /* PRELOADER */
 
@@ -326,7 +345,7 @@ section {
 }
 
 .features .iconbox-red:hover .icon i {
-  color: #ffd106;
+  color: #ffffff;
 }
 
 .features .iconbox-red:hover .icon path {
@@ -338,23 +357,23 @@ section {
 }
 
 .features .iconbox-lightred:hover .icon i {
-  color: #ffd106;
+  color: #ffffff;
 }
 
 .features .iconbox-lightred:hover .icon path {
-  fill: #ffd106;
+  fill: #ffffff;
 }
 
 .features .iconbox-darkred i {
-  color: #000000;
+  color: #ffffff;
 }
 
 .features .iconbox-darkred:hover .icon i {
-  color: #ffd106;
+  color: #ffffff;
 }
 
 .features .iconbox-darkred:hover .icon path {
-  fill: #ffd106;
+  fill: #ffffff;
 }
 
 .features .iconbox-red i {
@@ -362,11 +381,11 @@ section {
 }
 
 .features .iconbox-red:hover .icon i {
-  color: #ffd106;
+  color: #ffffff;
 }
 
 .features .iconbox-red:hover .icon path {
-  fill: #ffd106;
+  fill: #ffffff;
 }
 
 .features .icon-box h4 {
