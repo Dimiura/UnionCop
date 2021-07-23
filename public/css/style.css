@@ -15,11 +15,17 @@
 
 .txtEdit
 {
+  outline: 0;
   border-radius: 10px;
 }
 
 
-
+.container input
+{
+  text-align: center;
+  width: 400px;
+  padding: 8px;
+}
 
 /* HOME */
 
@@ -417,7 +423,7 @@ section {
 /* FAQ */
 
 .FAQ {
-  background-color: black;
+  background-color: #fcb900;
 }
 
 .section-titulo h2 {
@@ -436,7 +442,7 @@ section {
   display: block;
   width: 50px;
   height: 6px;
-  background: #fcb900;
+  background: #000000;
   bottom: 0;
   left: calc(50% - 25px);
 }
